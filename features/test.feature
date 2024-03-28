@@ -1,7 +1,7 @@
 Feature: Test Asset Endpoints
 
   @simple_test
-  Scenario: run a simple test
+  Scenario: verify quota of a single user
     Given asset setup is done
     When user checks quota for "S0000007A"
     Then user details are fetched correctly
@@ -10,7 +10,7 @@ Feature: Test Asset Endpoints
       | 35206b73-5cd3-40b7-b550-590942229a78 | 3            | 3          |
 
   @data_driven_tests
-  Scenario Outline: run a simple test
+  Scenario Outline: verify quota for multiple users
     Given asset setup is done
     When user checks quota for "<external_uin>"
     Then user details are fetched correctly
