@@ -4,12 +4,6 @@ import json
 from hamcrest import assert_that, equal_to
 import psycopg2
 
-# conn = psycopg2.connect(database="appdb",
-#                         host="127.0.0.1",
-#                         user="appuser",
-#                         password="postgrespassword",
-#                         port="5432")
-
 
 @given(u'asset setup is done')
 def step_impl(context):
